@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:css='false' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
@@ -334,3 +335,341 @@
   //]]></script>
 </body>
 </html>
+=======
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <meta content='Agenda deportiva de hoy con horarios en tu zona, partidos en vivo y próximos encuentros de fútbol, NBA y más.' name='description'/>
+  <meta content='#0a110e' name='theme-color'/>
+  <title><data:blog.pageTitle/></title>
+  <b:include data='blog' name='all-head-content'/>
+
+  <b:skin><![CDATA[ /* estilos en la etiqueta style de abajo */ ]]></b:skin>
+  <style type='text/css'>
+  /*<![CDATA[*/
+    :root{--bg:#0a110e;--card:#111b16;--card2:#16241e;--bd:#223229;--tx:#e8f1ec;--mu:#8ba598;--gr:#22c55e;--gr2:#16a34a;--red:#ef4444;--r:14px}
+    [data-theme=light]{--bg:#f1f5f2;--card:#fff;--card2:#f1f7f3;--bd:#d9e3dc;--tx:#10201a;--mu:#5b7266;--gr:#15803d;--gr2:#166534}
+    *{box-sizing:border-box}
+    #navbar-iframe,.navbar{display:none!important}
+    [hidden]{display:none!important}
+    body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;color:inherit;cursor:pointer}
+    .wrap{width:100%;max-width:960px;margin:0 auto;padding:0 16px}
+    header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+    .logo{font-weight:900;font-size:20px;letter-spacing:-.5px;display:flex;align-items:center;gap:8px}
+    .logo i{font-style:normal;font-size:24px}
+    .logo b{color:var(--gr)}
+    .tag{font-size:11px;font-weight:800;border:1.5px solid var(--gr);color:var(--gr);border-radius:6px;padding:1px 6px}
+    nav{display:flex;align-items:center;gap:6px}
+    nav a,nav button{background:none;border:0;padding:8px 12px;border-radius:10px;color:var(--mu);font-weight:600;font-size:14px}
+    nav a:hover,nav button:hover{background:var(--card2);color:var(--tx)}
+    h1{font-size:clamp(22px,4.5vw,32px);line-height:1.2;margin:28px 0 6px;text-align:center;font-weight:900;letter-spacing:-.5px}
+    .sub{text-align:center;color:var(--mu);max-width:560px;margin:0 auto 24px;font-size:14px}
+    .card{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;margin-bottom:24px}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;border-bottom:1px solid var(--bd);font-weight:700;font-size:14px}
+    .bar span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:8px;animation:pulse 1.4s infinite}
+    @keyframes pulse{50%{opacity:.25}}
+    #frame{position:relative;aspect-ratio:16/9;background:#000}
+    #frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    #ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px;color:#9fb5a9;background:radial-gradient(circle at 50% 40%,#17402b,#07100c)}
+    #ph i{font-style:normal;font-size:46px}
+    .tools{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px;border-top:1px solid var(--bd);align-items:center}
+    .tools .sp{flex:1}
+    .btn{background:var(--card2);border:1px solid var(--bd);border-radius:10px;padding:7px 13px;font-size:13px;font-weight:700}
+    .btn:hover{border-color:var(--gr)}
+    .btn.pri{background:var(--gr2);border-color:var(--gr2);color:#fff}
+    .head{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--bd)}
+    .head h2{margin:0;font-size:16px;text-transform:uppercase;letter-spacing:.5px}
+    #q{background:var(--card2);border:1px solid var(--bd);border-radius:10px;padding:8px 12px;color:var(--tx);font:inherit;font-size:14px;width:min(100%,230px)}
+    #q:focus{outline:2px solid var(--gr);border-color:transparent}
+    #chips{display:flex;gap:8px;overflow-x:auto;padding:12px 16px;border-bottom:1px solid var(--bd);scrollbar-width:none}
+    .chip{flex:none;background:var(--card2);border:1px solid var(--bd);border-radius:99px;padding:5px 13px;font-size:13px;font-weight:600;color:var(--mu)}
+    .chip.on{background:var(--gr2);border-color:var(--gr2);color:#fff}
+    .row{display:flex;align-items:center;gap:12px;width:100%;padding:12px 16px;background:none;border:0;border-bottom:1px solid var(--bd);text-align:left}
+    .row:last-child{border-bottom:0}
+    .row:hover,.row.on{background:var(--card2)}
+    .row.on{box-shadow:inset 3px 0 var(--gr)}
+    .row.done{opacity:.5}
+    .time{flex:none;min-width:58px;text-align:center;font-weight:800;font-size:13px;color:var(--gr);border:1.5px solid var(--gr);border-radius:8px;padding:3px 6px}
+    .flag{flex:none;font-size:22px}
+    .txt{flex:1;min-width:0;display:flex;flex-direction:column}
+    .txt b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .txt small{color:var(--mu)}
+    .pill{flex:none;font-size:11px;font-weight:800;padding:3px 9px;border-radius:99px;background:var(--card2);color:var(--mu);border:1px solid var(--bd)}
+    .pill.live{background:var(--red);border-color:var(--red);color:#fff;animation:pulse 1.6s infinite}
+    #empty{padding:28px;text-align:center;color:var(--mu)}
+    .note{padding:10px 16px;font-size:12px;color:var(--mu);border-top:1px solid var(--bd)}
+    footer{margin-top:auto;padding:24px 0;border-top:1px solid var(--bd);text-align:center;color:var(--mu);font-size:12px}
+    dialog{background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:var(--r);width:min(700px,94vw);padding:20px}
+    dialog::backdrop{background:rgba(0,0,0,.7)}
+    dialog h3{margin:0 0 6px}
+    dialog p{margin:0 0 10px;color:var(--mu);font-size:13px}
+    dialog code{background:var(--card2);padding:1px 5px;border-radius:5px}
+    #ta{width:100%;height:240px;background:var(--card2);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:10px;font:12px/1.6 ui-monospace,Menlo,Consolas,monospace;resize:vertical}
+    .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    #toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--gr2);color:#fff;padding:9px 18px;border-radius:99px;font-weight:700;font-size:13px;z-index:60}
+    .hidden-section{display:none}
+    @media(max-width:560px){.hide-sm{display:none}.row{padding:11px 12px;gap:9px}}
+  /*]]>*/
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class='wrap'>
+      <a class='logo' href='/'><i>⚽</i><span>Fútbol <b>Libre</b></span><span class='tag'>TV</span></a>
+      <nav>
+        <a class='hide-sm' href='#playerbox'>Reproductor</a>
+        <a class='hide-sm' href='#agenda'>Agenda</a>
+        <button id='theme' title='Cambiar tema' type='button'>🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class='wrap'>
+    <h1>Partidos de hoy en vivo</h1>
+    <p class='sub'>Agenda deportiva con horarios adaptados a tu zona horaria. Elegí un partido y mirá las señales disponibles.</p>
+
+    <section class='card' id='playerbox'>
+      <div class='bar'><span id='title'>Elegí un partido de la agenda</span><span class='pill'>HD</span></div>
+      <div id='frame'>
+        <iframe allow='autoplay; encrypted-media; picture-in-picture; fullscreen' allowfullscreen='true' id='player' referrerpolicy='no-referrer' sandbox='allow-scripts allow-same-origin allow-presentation' title='Reproductor'></iframe>
+        <div id='ph'><i>▶️</i><span id='phtxt'>Hacé clic en un partido de la agenda para reproducirlo</span></div>
+      </div>
+      <div class='tools'>
+        <span id='sources'></span>
+        <span class='sp'></span>
+        <button class='btn' id='reload' type='button'>↻ Recargar</button>
+        <button class='btn' id='full' type='button'>⛶ Pantalla completa</button>
+        <button class='btn' id='share' type='button'>🔗 Compartir</button>
+      </div>
+    </section>
+
+    <section class='card' id='agenda'>
+      <div class='head'>
+        <h2>📅 Agenda deportiva de hoy</h2>
+        <input aria-label='Buscar partido' id='q' placeholder='Buscar equipo o torneo…' type='search'/>
+      </div>
+      <div id='chips'></div>
+      <div id='list' aria-live='polite'></div>
+      <div hidden='hidden' id='empty'>No hay partidos que coincidan.</div>
+      <div class='note' id='tzn'></div>
+    </section>
+
+    <noscript><p class='sub'>Activá JavaScript para ver la agenda.</p></noscript>
+  </main>
+
+  <b:section class='hidden-section' id='main' showaddelement='no'></b:section>
+
+  <footer>
+    <div class='wrap'>
+      <p>Fútbol Libre TV · Agenda deportiva</p>
+      <p>Este sitio no aloja transmisiones. Los reproductores pertenecen a sus respectivos titulares.</p>
+    </div>
+  </footer>
+
+  <!-- Editor de agenda: abrilo agregando #admin a la URL -->
+  <dialog id='admin'>
+    <h3>Editor de agenda</h3>
+    <p>Una línea por partido: <code>hora | bandera | torneo | equipos | opción1 | opción2 | opción3</code>. Fecha opcional: <code>2026-11-02 21:00</code>. Las líneas con <code>#</code> se ignoran.</p>
+    <textarea id='ta' spellcheck='false'></textarea>
+    <div class='acts'>
+      <button class='btn pri' id='apply' type='button'>Previsualizar</button>
+      <button class='btn' id='copy' type='button'>Copiar texto</button>
+      <button class='btn' id='close' type='button'>Cerrar</button>
+    </div>
+    <p style='margin-top:12px'>Para publicar los cambios: pegá este texto en la entrada de Blogger con la etiqueta <code>agenda</code>.</p>
+  </dialog>
+
+  <div hidden='hidden' id='toast'></div>
+
+  <script>//<![CDATA[
+  (function(){
+    'use strict';
+    // ---------- CONFIGURACIÓN ----------
+    const CONFIG = {
+      tz: -3,            // zona horaria en la que escribís los horarios (-3 = Argentina)
+      label: 'agenda',   // etiqueta de la entrada de Blogger que contiene la agenda
+      dur: 120           // minutos que se considera "en vivo" un partido
+    };
+    // Agenda de ejemplo (se usa si todavía no creaste la entrada "agenda")
+    const DEFAULT_TEXT = [
+      '19:00 | 🇧🇷 | Brasileirão | Santos vs Palmeiras | https://www.youtube.com/embed/5qap5aO4i9A',
+      '19:30 | 🇧🇷 | Brasileirão | Fluminense vs Internacional',
+      '20:00 | 🇨🇴 | Primera A | Once Caldas vs Alianza',
+      '20:00 | 🏀 | NBA | Indiana Pacers vs Philadelphia 76ers',
+      '20:30 | 🇺🇸 | MLS | Inter Miami vs FC Cincinnati',
+      '20:30 | 🇨🇱 | Primera División | Universidad Católica vs Audax Italiano'
+    ].join('\n');
+
+    // ---------- UTILIDADES ----------
+    const $ = s => document.querySelector(s);
+    const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+    const state = { items: [], q: '', t: 'all', cur: null, raw: '' };
+    let toastTimer;
+    const toast = msg => { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => t.hidden = true, 2000); };
+
+    function toTs(s) {
+      const m = s.match(/^(?:(\d{4})-(\d{2})-(\d{2})\s+)?(\d{1,2}):(\d{2})$/);
+      if (!m) return null;
+      let y, mo, d;
+      if (m[1]) { y = +m[1]; mo = +m[2] - 1; d = +m[3]; }
+      else { const n = new Date(Date.now() + CONFIG.tz * 36e5); y = n.getUTCFullYear(); mo = n.getUTCMonth(); d = n.getUTCDate(); }
+      return Date.UTC(y, mo, d, +m[4], +m[5]) - CONFIG.tz * 36e5;
+    }
+
+    const slug = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+    function parse(text) {
+      return text.split('\n').map(l => l.trim()).filter(l => l && l[0] !== '#').map(l => {
+        const f = l.split('|').map(s => s.trim());
+        const ts = toTs(f[0]);
+        if (ts == null || f.length < 4) return null;
+        return {
+          ts, flag: f[1] || '⚽', tour: f[2], teams: f[3], id: slug(f[3]),
+          urls: f.slice(4).filter(u => /^https:\/\//i.test(u))   // solo https: evita javascript: y similares
+        };
+      }).filter(Boolean).sort((a, b) => a.ts - b.ts);
+    }
+
+    const status = m => { const n = Date.now(); return n < m.ts ? 'soon' : n < m.ts + CONFIG.dur * 6e4 ? 'live' : 'done'; };
+    const fmtIn = ms => { const m = Math.max(1, Math.round(ms / 6e4)); if (m < 60) return 'en ' + m + ' min'; const h = Math.floor(m / 60); return h < 24 ? 'en ' + h + 'h ' + (m % 60) + 'm' : 'en ' + Math.floor(h / 24) + ' d'; };
+    const fmt = ts => {
+      const d = new Date(ts);
+      let s = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
+      if (d.toDateString() !== new Date().toDateString()) s = d.toLocaleDateString([], { day: '2-digit', month: '2-digit' }) + ' ' + s;
+      return s;
+    };
+
+    // ---------- RENDER ----------
+    function chips() {
+      const box = $('#chips'); box.textContent = '';
+      const tours = [...new Set(state.items.map(m => m.tour))];
+      [['all', 'Todos'], ['live', '🔴 En vivo']].concat(tours.map(t => [t, t])).forEach(([k, label]) => {
+        const b = el('button', 'chip' + (state.t === k ? ' on' : ''), label);
+        b.type = 'button';
+        b.onclick = () => { state.t = k; chips(); list(); };
+        box.append(b);
+      });
+    }
+
+    function list() {
+      const box = $('#list'); box.textContent = '';
+      const q = state.q.toLowerCase();
+      const rows = state.items.filter(m =>
+        (state.t === 'all' || (state.t === 'live' ? status(m) === 'live' : m.tour === state.t)) &&
+        (!q || (m.teams + ' ' + m.tour).toLowerCase().includes(q)));
+      $('#empty').hidden = rows.length > 0;
+      rows.forEach(m => {
+        const s = status(m);
+        const b = el('button', 'row' + (state.cur === m ? ' on' : '') + (s === 'done' ? ' done' : ''));
+        b.type = 'button';
+        const tx = el('span', 'txt'); tx.append(el('b', null, m.teams), el('small', null, m.tour));
+        b.append(el('span', 'time', fmt(m.ts)), el('span', 'flag', m.flag), tx,
+          el('span', 'pill ' + s, s === 'live' ? 'EN VIVO' : s === 'soon' ? fmtIn(m.ts - Date.now()) : 'Finalizado'));
+        b.onclick = () => play(m);
+        box.append(b);
+      });
+    }
+
+    // ---------- REPRODUCTOR ----------
+    function setSource(i) {
+      $('#player').src = state.cur.urls[i];
+      document.querySelectorAll('#sources .btn').forEach((b, j) => b.classList.toggle('pri', j === i));
+    }
+
+    function play(m, noScroll) {
+      state.cur = m;
+      $('#title').textContent = m.tour + ' · ' + m.teams;
+      const bar = $('#sources'); bar.textContent = '';
+      const f = $('#player'), ph = $('#ph');
+      if (!m.urls.length) {
+        f.removeAttribute('src');
+        ph.hidden = false;
+        $('#phtxt').textContent = 'La señal de este partido se publica minutos antes del inicio.';
+      } else {
+        ph.hidden = true;
+        m.urls.forEach((u, i) => {
+          const b = el('button', 'btn', 'Opción ' + (i + 1));
+          b.type = 'button'; b.style.marginRight = '6px';
+          b.onclick = () => setSource(i);
+          bar.append(b);
+        });
+        setSource(0);
+      }
+      try { history.replaceState(null, '', '#' + m.id); } catch (e) {}
+      list();
+      if (!noScroll) $('#playerbox').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    $('#reload').onclick = () => { const f = $('#player'), s = f.src; if (s) { f.src = 'about:blank'; setTimeout(() => f.src = s, 150); } };
+    $('#full').onclick = () => { const f = $('#frame'); (f.requestFullscreen || f.webkitRequestFullscreen || (() => {})).call(f); };
+    $('#share').onclick = async () => {
+      try {
+        if (navigator.share) await navigator.share({ title: document.title, url: location.href });
+        else { await navigator.clipboard.writeText(location.href); toast('Enlace copiado'); }
+      } catch (e) {}
+    };
+
+    // ---------- TEMA ----------
+    const root = document.documentElement;
+    try { const t = localStorage.getItem('fl-theme'); if (t) root.dataset.theme = t; } catch (e) {}
+    $('#theme').onclick = () => {
+      const t = root.dataset.theme === 'light' ? 'dark' : 'light';
+      root.dataset.theme = t;
+      try { localStorage.setItem('fl-theme', t); } catch (e) {}
+    };
+
+    // ---------- EDITOR (#admin) ----------
+    const dlg = $('#admin');
+    function openAdmin() { if (!dlg.showModal || dlg.open) return; $('#ta').value = state.raw; dlg.showModal(); }
+    function closeAdmin() { dlg.close(); try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} }
+    $('#apply').onclick = () => setText($('#ta').value);
+    $('#close').onclick = closeAdmin;
+    $('#copy').onclick = async () => { try { await navigator.clipboard.writeText($('#ta').value); toast('Texto copiado'); } catch (e) { $('#ta').select(); } };
+    window.addEventListener('hashchange', () => { if (location.hash === '#admin') openAdmin(); });
+
+    // ---------- DATOS ----------
+    function setText(txt) {
+      state.raw = txt;
+      state.items = parse(txt);
+      state.cur = null;
+      chips(); list();
+    }
+
+    const htmlToText = html => {
+      const s = html.replace(/<br\s*\/?>/gi, '\n').replace(/<\/(div|p|li)>/gi, '\n');
+      return new DOMParser().parseFromString(s, 'text/html').body.textContent;
+    };
+
+    async function load() {
+      let txt = DEFAULT_TEXT;
+      try {
+        const r = await fetch('/feeds/posts/default/-/' + encodeURIComponent(CONFIG.label) + '?alt=json&max-results=1');
+        if (r.ok) {
+          const j = await r.json();
+          const e = j.feed.entry && j.feed.entry[0];
+          if (e) txt = htmlToText(e.content.$t);
+        }
+      } catch (e) {}
+      setText(txt);
+      const h = decodeURIComponent(location.hash.slice(1));
+      if (h === 'admin') openAdmin();
+      else { const m = state.items.find(x => x.id === h); if (m) play(m, true); }
+    }
+
+    $('#q').oninput = e => { state.q = e.target.value; list(); };
+    $('#tzn').textContent = 'Horarios mostrados en tu zona: ' + Intl.DateTimeFormat().resolvedOptions().timeZone;
+    setInterval(list, 30000);
+    load();
+  })();
+  //]]></script>
+</body>
+</html>
+>>>>>>> 9932472818b8bac5929224f8936e09f041ca7ea4
